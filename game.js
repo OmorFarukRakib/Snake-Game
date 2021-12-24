@@ -49,10 +49,11 @@ function main(currentTime) {
   dancingSnakeTopPosition()
 
   if (gameOver) {
-    if (confirm('You lost. Press ok to restart.')) {
-      window.location = 'https://omorfarukrakib.github.io/Snake-Game/'
-    }
-    return
+    alert("NOOB!!!! YOU LOST!!! ");
+//     if (confirm('You lost. Press ok to restart.')) {
+//       window.location = 'https://omorfarukrakib.github.io/Snake-Game/'
+//     }
+//     return
   }
 
 
