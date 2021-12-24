@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Snake</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="game.js" defer type="module"></script>
+</head>
+<body>
+  <div class="game-wrapper">
+  <div id="instructions"> 
+    <!-- <div style="width: 500px; text-align: right;"> -->
+      <h1 style=" text-align: center; text-transform: uppercase;">Instructions</h1>
+      To PAUSE the game press <img style ="width: 30px; height: 30px;" src="./assets/space.png" alt="Italian Trulli"> button. 
+      <br/>
+      To move snake UP press <img style ="width: 30px; height: 30px;" src="./assets/arrow-up.png" alt="Italian Trulli"> key. 
+      <br/>
+      To move snake DOWN press <img style ="width: 30px; height: 30px;" src="./assets/arrow-down.png" alt="Italian Trulli"> key. 
+      <br/>
+      To move snake RIGHT press <img style ="width: 30px; height: 30px;" src="./assets/arrow-right.png" alt="Italian Trulli">  key. 
+      <br/>
+      To move snake LEFT press <img style ="width: 30px; height: 30px;" src="./assets/arrow-left.png" alt="Italian Trulli"> key. 
+    <!-- </div> -->
+   
+  <div class="dancing-snake"><img style ="padding-top: 50px; width: 250px; height: 50px;" src="./assets/dancingSnake.gif" alt="Italian Trulli"></div>
+  
+  </div>
+  <div id="game-board"></div>
+  <div id="right-board">
+      <div id="score-board"> 
+        <h1 style=" text-align: center; text-transform: uppercase;">SCORE BOARD</h1>
+        <div>Your High Score: <span id="high-score-span">0</span> </div>
+        <div>Score: <span id="score-span">0</span> </div>
+        
+        
+      
+      </div> 
+      <div id="Game-Menue">
+        <h1 style=" text-align: center; text-transform: uppercase;">Game Settings</h1>
+
+        <div > GAME Difficulty: Easy</div> 
+        <div > Snake expansion rate: 5</div> 
+        <div style="position: absolute; bottom: 2%; right: 10%; "><a style=" text-decoration: none; color: white;  opacity:0.5;" href="https://github.com/OmorFarukRakib">Powered by Rakib</a></div>
+      </div>
+      
+  </div>
+  
+</div>
+</body>
+</html>

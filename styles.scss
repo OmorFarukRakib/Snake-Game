@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+
+body {
+  box-sizing: border-box;
+  min-height: 85vh;
+  min-width: 85vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: rgb(80, 75, 75);
+  overflow: hidden;
+  font-family: 'Shizuru', cursive;
+}
+.game-wrapper {
+  /* border: 4px dotted green; */
+  display: flex;
+  /* width: 200vmin;
+      height: 100vmin; */
+}
+#instructions {
+  padding-left: 3px;
+  border: 2px solid white;
+  /* position: absolute; */
+  width: 60vmin;
+  height: 100vmin;
+  color: white;
+}
+
+.dancing-snake {
+  position: absolute;
+  // animation: myfirst 10s infinite;
+  // animation-direction: normal;
+}
+
+@keyframes myfirst {
+  0% {
+    left: -20%;
+    top: random(100) + vh;
+  }
+  100% {
+    left: 120%;
+    top: random(100) + vh;
+    // top: random(100)%;
+  }
+}
+
+#right-board {
+  /* border: 2px solid rgb(252, 252, 252); */
+  /* position: absolute; */
+  width: 60vmin;
+  height: 100vmin;
+}
+#score-board {
+  padding-left: 3px;
+
+  border: 2px solid rgb(255, 255, 255);
+  height: 40%;
+  color: white;
+}
+#Game-Menue {
+  padding-left: 3px;
+
+  border: 2px solid rgb(255, 254, 254);
+  height: 70%;
+  color: white;
+}
+/* #game-menu{
+    border: 2px solid white;
+    position: absolute;
+    left: 2%;
+    top: 10%;
+    bottom: 2%;
+    right: 75%;
+} */
+
+#game-board {
+  background-color: rgb(0, 0, 0);
+  box-sizing: border-box;
+  border: 20px solid #f00;
+  width: 100vmin;
+  height: 100vmin;
+  display: grid;
+  grid-template-rows: repeat(21, 1fr);
+  grid-template-columns: repeat(21, 1fr);
+}
+
+.snake {
+  background-color: hsl(113, 99%, 37%);
+  border: 0.25vmin solid black;
+  border-radius: 8px;
+}
+
+.food {
+  background-color: hsl(50, 100%, 50%);
+  border: 0.25vmin solid black;
+  border-radius: 50%;
+}
